@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using COMP2007_S2016_Assignment2_Restaurant.Models;
 
 namespace COMP2007_S2016_Assignment2_Restaurant.Controllers
 {
