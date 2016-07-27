@@ -13,11 +13,11 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        /**public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
-        }
+        }**/
     }
 }
