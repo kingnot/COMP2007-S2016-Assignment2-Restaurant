@@ -16,17 +16,23 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Controllers
 {
     public class MenuController : Controller
     {
+        MenuContext menuDB = new MenuContext();
+        
         //
         // GET: /Menu/
+        
         public ActionResult Index()
         {
-            return View();
+            List<Foodtype> foodtypes = menuDB.Foodtypes.ToList();
+
+            return View(foodtypes);
         }
+        /**
         //
         // GET: /Menu/Browse?type=Appetizer
-        public ActionResult Browse(string type)
+        public ActionResult Browse(string foodtype)
         {
-            Foodtype typeModel = new Foodtype(type);
+            Foodtype typeModel = new Foodtype(foodtype);
 
             return View(typeModel);
         }
@@ -38,5 +44,6 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Controllers
 
             return View(item);
         }
+    */
     }
 }
