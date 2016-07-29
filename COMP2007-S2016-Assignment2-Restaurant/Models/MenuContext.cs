@@ -13,7 +13,6 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Models
         }
 
         public virtual DbSet<Foodtype> Foodtypes { get; set; }
-        
-
+        public virtual DbSet<Fooditem> Fooditems { get; set; }
     }
 }

@@ -27,12 +27,13 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Controllers
 
             return View(foodtypes);
         }
-        /**
+
         //
         // GET: /Menu/Browse?type=Appetizer
-        public ActionResult Browse(string foodtype)
+        public ActionResult Browse(string foodtype = "Appetizer")
         {
-            Foodtype typeModel = new Foodtype(foodtype);
+            // Retrieve Foodtype and its Associated Fooditem from database
+            Foodtype typeModel = menuDB.Foodtypes.Include("Fooditems").Single(g => g.Name == foodtype);
 
             return View(typeModel);
         }
@@ -40,10 +41,10 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Controllers
         // GET: /Menu/Details/1
         public ActionResult Details(int id = 1)
         {
-            Fooditem item = new Fooditem("Fooditem " + id);
+            Fooditem item = menuDB.Fooditems.Find(id);
 
             return View(item);
         }
-    */
+
     }
 }

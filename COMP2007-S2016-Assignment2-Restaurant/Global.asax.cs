@@ -12,8 +12,7 @@ namespace COMP2007_S2016_Assignment2_Restaurant
     {
         protected void Application_Start()
         {
-            System.Data.Entity.Database.SetInitializer(
-       new COMP2007_S2016_Assignment2_Restaurant.Models.SampleData());
+            System.Data.Entity.Database.SetInitializer(new COMP2007_S2016_Assignment2_Restaurant.Models.SampleData());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
