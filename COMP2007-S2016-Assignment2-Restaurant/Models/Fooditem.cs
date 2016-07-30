@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**
+ * @file: Fooditem.cs
+ * @website: Ajiji Sushi
+ * @author: Siqian Yu, Fei Wang
+ * @date: July 28, 2016
+ * @description: This is the Model of Fooditem that has food name, price, description and image
+ * 
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;

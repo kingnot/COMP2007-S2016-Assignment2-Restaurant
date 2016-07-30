@@ -5,5 +5,13 @@
     ViewBag.Title = "Browse";
 }
 
-<h2>Browse</h2>
+<h2>Browsing Genre: @Model.Name</h2>
 
+<ul>
+    @foreach (Fooditem fooditem in Model.Fooditems)
+    {
+        <li>
+            @Html.ActionLink(fooditem.Name, "Details", new { id = fooditem.FooditemId })
+        </li>
+    }
+</ul>
