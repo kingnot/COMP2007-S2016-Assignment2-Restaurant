@@ -1,17 +1,23 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <h2>@ViewBag.Message</h2>
+        <address>
+            411 Bayfield St.<br />
+            Barrie, ON L4M 5E5<br />
+            <abbr title="Phone">P:</abbr>
+            +1 705-555-1100
+        </address>
+        <h2>Connect Us</h2>
+        <div>
+            <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="co-sm-12 co-md-8">
+        <img src="~/Assets/images/location.PNG" alt="Our Location" height="350"/>
+    </div>
+</div>
