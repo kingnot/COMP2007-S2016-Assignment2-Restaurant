@@ -5,13 +5,25 @@
     ViewBag.Title = "Browse";
 }
 
-<h2>Browsing Genre: @Model.Name</h2>
+<h2>Browsing Food Type: @Model.Name</h2>
 
-<ul>
+<div class="row">
     @foreach (Fooditem fooditem in Model.Fooditems)
     {
-        <li>
-            @Html.ActionLink(fooditem.Name, "Details", new { id = fooditem.FooditemId })
-        </li>
+        <div class="col-sm-4 col-md-3">
+            <div class="thumbnail">
+                <img src="@fooditem.FooditemPicUrl" alt="@fooditem.Name">
+                <div class="caption">
+                    <h3>@Html.ActionLink(fooditem.Name, "Details", new { id = fooditem.FooditemId })</h3>
+                    <p>@fooditem.ShortDescription</p>
+                </div>
+            </div>
+        </div>
     }
-</ul>
+</div>
+
+<div>
+    <a class="btn btn-primary btn-sm" href="/Menu/">TYPES OF FOOD</a>
+</div>
+
+    

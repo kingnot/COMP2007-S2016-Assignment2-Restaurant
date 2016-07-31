@@ -5,16 +5,18 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Album: @Model.Name</h2>
+<h2>Food: @Model.Name</h2>
 <hr />
 <ul>
     <li>Type: @Model.Foodtype.Name </li>
     <li>Price: @Model.Price </li>
-    <li>Description: @Model.Description</li>
+    <li>Description: @Model.DetailedDescription</li>
     <li>
         Image:
         <img src="@Model.FooditemPicUrl" alt="@Model.Name" />
-
     </li>
 </ul>
 
+<div>
+    <a class="btn btn-primary btn-sm" href="/Menu/Browse?foodtype=@Model.Foodtype.Name">CHOOSE ANOTHER FOOD</a>
+</div>

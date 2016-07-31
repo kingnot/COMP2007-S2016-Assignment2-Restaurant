@@ -31,7 +31,7 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Controllers
         }
 
         //
-        // GET: /Menu/Browse?type=Appetizer
+        // GET: /Menu/Browse?foodtype=Appetizer
         public ActionResult Browse(string foodtype = "Appetizer")
         {
             // Retrieve Foodtype and its Associated Fooditem from database

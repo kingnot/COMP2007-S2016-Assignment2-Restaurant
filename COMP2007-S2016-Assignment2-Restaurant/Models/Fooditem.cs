@@ -40,7 +40,8 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Models
 
         [Display(Name = "Food Picture URL")]
         public virtual string FooditemPicUrl { get; set; }
-        public virtual string Description { get; set; }
+        public virtual string ShortDescription { get; set; }
+        public virtual string DetailedDescription { get; set; }
         public virtual Foodtype Foodtype { get; set; }
     }
 }
