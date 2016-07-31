@@ -10,10 +10,19 @@
     Select from @Model.Count()
     food types:
 </p>
-<ul>
+
+<div class="row">
     @foreach (Foodtype item in Model)
     {
-        <li>@Html.ActionLink(item.Name, "Browse", new { foodtype = item.Name })</li>
+        <div class="col-sm-4 col-md-3">
+            <div class="thumbnail">
+                <img src="@item.FoodtypePicUrl" alt="@item.Name">
+                <div class="caption">
+                    <h3>@Html.ActionLink(item.Name, "Browse", new { foodtype = item.Name })</h3>  
+                </div>
+            </div>
+        </div>
     }
-</ul>
+</div>
+
 

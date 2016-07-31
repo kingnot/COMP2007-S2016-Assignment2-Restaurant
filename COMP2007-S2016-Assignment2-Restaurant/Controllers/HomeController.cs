@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**
+ * @file: HomeController.cs
+ * @website: Ajiji Sushi
+ * @author: Siqian Yu, Fei Wang
+ * @date: July 28, 2016
+ * @description: This is the Home Controller
+ * 
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
