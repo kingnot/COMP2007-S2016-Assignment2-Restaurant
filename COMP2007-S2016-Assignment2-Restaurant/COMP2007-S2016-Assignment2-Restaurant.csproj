@@ -188,6 +188,28 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\ak47.png" />
+    <Content Include="Assets\images\appetizers.png" />
+    <Content Include="Assets\images\avocado_cucumber_roll.png" />
+    <Content Include="Assets\images\bootstrap-theme.css" />
+    <Content Include="Assets\images\california_roll.png" />
+    <Content Include="Assets\images\cheese_wonton.png" />
+    <Content Include="Assets\images\chicken_teriyaki.png" />
+    <Content Include="Assets\images\crab_sushi.png" />
+    <Content Include="Assets\images\eel_fried_rice.png" />
+    <Content Include="Assets\images\eel_sushi.png" />
+    <Content Include="Assets\images\fried_rice.png" />
+    <Content Include="Assets\images\gyoza.png" />
+    <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\mixed_vegetable_fried_rice.png" />
+    <Content Include="Assets\images\red_dragon.png" />
+    <Content Include="Assets\images\rolls.png" />
+    <Content Include="Assets\images\salmon_fried_rice.png" />
+    <Content Include="Assets\images\salmon_sushi.png" />
+    <Content Include="Assets\images\seafood_fried_rice.png" />
+    <Content Include="Assets\images\shrimp_tempura.png" />
+    <Content Include="Assets\images\sushi.png" />
+    <Content Include="Assets\images\tuna_sushi.png" />
     <Content Include="Assets\images\location.PNG" />
     <Content Include="Assets\images\logo.png" />
     <Content Include="Content\bootstrap-theme.css" />
