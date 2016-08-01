@@ -1,15 +1,19 @@
-﻿@using COMP2007_S2016_Assignment2_Restaurant.Models
+﻿@*
+    * @file: Index.cshtml
+    * @website: Ajiji Sushi
+    * @author: Siqian Yu, Fei Wang
+    * @date: July 30, 2016
+    * @description: This is the View for Menu Cover Page, which lists four types of food to choose from
+*@
+
+@using COMP2007_S2016_Assignment2_Restaurant.Models
 @model IEnumerable<Foodtype>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h3>Select Food Type</h3>
-<p>
-    Select from @Model.Count()
-    food types:
-</p>
+<h2>Select Food Type</h2>
 
 <div class="row">
     @foreach (Foodtype item in Model)

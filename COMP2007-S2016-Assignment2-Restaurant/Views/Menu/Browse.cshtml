@@ -1,20 +1,29 @@
-﻿@using COMP2007_S2016_Assignment2_Restaurant.Models
+﻿@*
+    * @file: Browse.cshtml
+    * @website: Ajiji Sushi
+    * @author: Siqian Yu, Fei Wang
+    * @date: July 30, 2016
+    * @description: This is the View for each Food type, which lists all the food items of that type
+*@
+
+@using COMP2007_S2016_Assignment2_Restaurant.Models
 @model Foodtype
 
 @{
     ViewBag.Title = "Browse";
 }
 
-<h2>Browsing Food Type: @Model.Name</h2>
+<h2>@Model.Name</h2>
 
 <div class="row">
     @foreach (Fooditem fooditem in Model.Fooditems)
     {
         <div class="col-sm-4 col-md-3">
             <div class="thumbnail">
-                <img src="@fooditem.FooditemPicUrl" alt="@fooditem.Name">
+                <img src="@fooditem.FooditemThumbnailUrl" alt="@fooditem.Name">
                 <div class="caption">
                     <h3>@Html.ActionLink(fooditem.Name, "Details", new { id = fooditem.FooditemId })</h3>
+                    <p>$@fooditem.Price</p>
                     <p>@fooditem.ShortDescription</p>
                 </div>
             </div>
@@ -22,8 +31,8 @@
     }
 </div>
 
-<div>
-    <a class="btn btn-primary btn-sm" href="/Menu/">TYPES OF FOOD</a>
+<div class="btn-group">
+    <a class="btn btn-default btn-sm" href="/Menu/">BACK to Food Types</a>
 </div>
 
     

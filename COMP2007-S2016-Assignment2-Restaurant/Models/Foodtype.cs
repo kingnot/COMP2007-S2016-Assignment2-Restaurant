@@ -34,6 +34,8 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Models
         }
 
         public virtual int FoodtypeId { get; set; }
+
+        [Display(Name = "Food Type")]
         public virtual string Name { get; set; }
 
         [Display(Name = "Type Picture URL")]

@@ -35,11 +35,18 @@ namespace COMP2007_S2016_Assignment2_Restaurant.Models
 
         public virtual int FooditemId { get; set; }
         public virtual int FoodtypeId { get; set; }
+
+        [Display(Name = "Food Item")]
         public virtual string Name { get; set; }
+
+        [DataType(DataType.Currency)]
         public virtual decimal Price { get; set; }
 
         [Display(Name = "Food Picture URL")]
         public virtual string FooditemPicUrl { get; set; }
+
+        [Display(Name = "Food Thumbnail URL")]
+        public virtual string FooditemThumbnailUrl { get; set; }
         public virtual string ShortDescription { get; set; }
         public virtual string DetailedDescription { get; set; }
         public virtual Foodtype Foodtype { get; set; }

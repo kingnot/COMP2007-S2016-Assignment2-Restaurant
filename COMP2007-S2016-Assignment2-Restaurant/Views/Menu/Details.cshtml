@@ -1,22 +1,29 @@
-﻿@using COMP2007_S2016_Assignment2_Restaurant.Models
+﻿@*
+    * @file: Details.cshtml
+    * @website: Ajiji Sushi
+    * @author: Siqian Yu, Fei Wang
+    * @date: July 30, 2016
+    * @description: This is the View for each food, which gives details such as a HD image and detailed description
+*@
+
+@using COMP2007_S2016_Assignment2_Restaurant.Models
 @model Fooditem
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Food: @Model.Name</h2>
+<h2>@Model.Name</h2>
 <hr />
-<ul>
+<ul class="food-item-box">
     <li>Type: @Model.Foodtype.Name </li>
-    <li>Price: @Model.Price </li>
+    <li>Price: $@Model.Price </li>
     <li>Description: @Model.DetailedDescription</li>
     <li>
-        Image:
-        <img src="@Model.FooditemPicUrl" alt="@Model.Name" />
+        <img src="@Model.FooditemPicUrl" alt="@Model.Name" height="350"/>
     </li>
 </ul>
 
-<div>
-    <a class="btn btn-primary btn-sm" href="/Menu/Browse?foodtype=@Model.Foodtype.Name">CHOOSE ANOTHER FOOD</a>
+<div class="btn-group">
+    <a class="btn btn-default btn-sm" href="/Menu/Browse?foodtype=@Model.Foodtype.Name">CHOOSE ANOTHER FOOD</a>
 </div>

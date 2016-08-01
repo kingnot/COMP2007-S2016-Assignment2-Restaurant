@@ -1,4 +1,13 @@
-﻿*
+﻿/**
+ * @file: Site.css
+ * @website: Ajiji Sushi
+ * @author: Siqian Yu, Fei Wang
+ * @date: July 30, 2016
+ * @description: Customized styles go here
+ * 
+ */
+
+*
 {
 	margin: 0px;
 	padding: 0px;
@@ -27,11 +36,47 @@ body
     display: inline-block;
 }
 
+.body-content .bg {
+    background: url(/Assets/images/background50.jpg) no-repeat center center fixed; 
+    height:600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.body-content .bg h2 {
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.body-content .bg .row {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+.body-content .bg .btn-group {
+    padding-left: 15px;
+}
+
+.body-content .bg .social-media {
+    padding-left: 15px;
+}
+
+.caption {
+    text-align: center;
+}
+
 #promotion
 {
 	height: 300px; 
 	width: 700px; 
 	background: url(/Assets/images/home-showcase.png) no-repeat;
+}
+
+ul.food-item-box {
+    list-style-type:none;
 }
 
 ul li a
@@ -157,6 +202,13 @@ p
 	margin-top: 0px;
 }
 
+.jumbotron h1 {
+    color: #BF4227;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+}
+
 h2
 {
 	color: #5e5b54;
@@ -165,7 +217,7 @@ h2
 h2, h3
 {
 	margin-bottom: 10px;
-	font-size: 16px;
+	font-size: 20px;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -182,7 +234,7 @@ h3
 
 a:link, a:visited
 {
-	color: #F6855E;
+	color: #BF4227;
 	text-decoration: none;
 	font-weight: bold;
 }
